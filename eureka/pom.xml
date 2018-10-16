@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>spring-cloud-eureka</groupId>
+	<artifactId>spring-cloud-eureka</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<properties>
+	   <spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
+	</properties>
+	
+	<dependencyManagement>
+	   <dependencies>
+	       <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+	   </dependencies>
+	</dependencyManagement>
+	<modules>
+		<module>spring-cloud-eureka-server</module>
+		<module>spring-cloud-eureka-producer</module>
+		<module>spring-cloud-eureka-consumer</module>
+		<module>spring-cloud-eureka-producer-2</module>
+	</modules>
+</project>
