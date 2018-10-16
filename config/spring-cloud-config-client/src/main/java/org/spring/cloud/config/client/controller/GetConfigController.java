@@ -10,10 +10,6 @@ public class GetConfigController {
     @Value("${whoami}")
     private String whoami;
     
-    static {
-        System.err.println("fuck...");
-    }
-    
     @RequestMapping("/whoami")
     public String getConfig() {
         return whoami;
