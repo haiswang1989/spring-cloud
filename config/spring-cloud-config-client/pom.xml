@@ -32,5 +32,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         
+        <!-- 该dependency是一套监控功能,可以监控程序的的运行时状态,其中就包括/refresh的功能 -->
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		
+		<!-- config client接入eureka引入 -->
+		<dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-starter-eureka</artifactId>
+	    </dependency>
 	</dependencies>
 </project>
